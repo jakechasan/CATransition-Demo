@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HtL-5N-2Ca">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--CATransition Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CATransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y24-aO-RW0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-ca-jca">
+                                <rect key="frame" x="0.0" y="275" width="600" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="View Transition"/>
+                                <connections>
+                                    <action selector="showTransition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngu-rj-q6X"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="imageA.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RoX-Yi-stm">
+                                <rect key="frame" x="0.0" y="317" width="600" height="283"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RoX-Yi-stm" secondAttribute="bottom" id="0Ap-FM-HA4"/>
+                            <constraint firstItem="a3f-ca-jca" firstAttribute="top" secondItem="Y24-aO-RW0" secondAttribute="bottom" constant="-5" id="2vk-gL-9l8"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="top" secondItem="a3f-ca-jca" secondAttribute="bottom" constant="15" id="6e5-sm-miE"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ANB-oP-CPN"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="top" secondItem="a3f-ca-jca" secondAttribute="bottom" constant="8" id="E4f-YG-c2h"/>
+                            <constraint firstItem="Y24-aO-RW0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JiX-y7-M2I"/>
+                            <constraint firstItem="a3f-ca-jca" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LPs-80-6gn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RoX-Yi-stm" secondAttribute="bottom" id="Qxx-lZ-1r4"/>
+                            <constraint firstAttribute="trailing" secondItem="Y24-aO-RW0" secondAttribute="trailing" id="R9b-7B-S04"/>
+                            <constraint firstAttribute="trailing" secondItem="RoX-Yi-stm" secondAttribute="trailing" id="Xa2-Cl-VL5"/>
+                            <constraint firstItem="a3f-ca-jca" firstAttribute="top" secondItem="Y24-aO-RW0" secondAttribute="bottom" constant="-5" id="agO-bk-t94"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="top" secondItem="a3f-ca-jca" secondAttribute="bottom" constant="12" id="b9R-lR-9vF"/>
+                            <constraint firstItem="Y24-aO-RW0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fa2-m1-ehi"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="top" secondItem="a3f-ca-jca" secondAttribute="bottom" constant="12" id="kpw-Dq-HR0"/>
+                            <constraint firstAttribute="trailing" secondItem="a3f-ca-jca" secondAttribute="trailing" id="mqY-gA-oQw"/>
+                            <constraint firstAttribute="trailing" secondItem="RoX-Yi-stm" secondAttribute="trailing" id="oCY-YW-XnO"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="top" secondItem="a3f-ca-jca" secondAttribute="bottom" id="uLQ-Se-Ttc"/>
+                            <constraint firstItem="RoX-Yi-stm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zj2-3K-aFS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6e5-sm-miE"/>
+                                <exclude reference="ANB-oP-CPN"/>
+                                <exclude reference="E4f-YG-c2h"/>
+                                <exclude reference="oCY-YW-XnO"/>
+                                <exclude reference="uLQ-Se-Ttc"/>
+                                <exclude reference="0Ap-FM-HA4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="CATransition Demo" id="S3r-k3-TAv"/>
+                    <connections>
+                        <outlet property="imageView" destination="RoX-Yi-stm" id="Oqz-wy-p7n"/>
+                        <outlet property="pickerView" destination="Y24-aO-RW0" id="aq2-4G-VVo"/>
+                        <outlet property="transitionPicker" destination="Y24-aO-RW0" id="4bY-H6-ISt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7K9-Oe-tIv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HtL-5N-2Ca" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWs-nO-fIT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qb4-v9-sz9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSO-E2-rMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageA.jpg" width="4000" height="3000"/>
+    </resources>
+</document>
